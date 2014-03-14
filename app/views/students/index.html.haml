@@ -1,0 +1,16 @@
+.top
+  %span
+    Список всех студентов
+  %a(href='/students/new')+ Добавить студента
+.content{:id => "pap"}
+  - @students.each do |s|
+    .students
+      %a= link_to "#{s.name} #{s.family}", student_path(s), class: "students_name", title: "Подробнее"
+      %a= link_to 'удалить', student_path(s), method: :delete, data: { confirm: "Удалить?" }, class: "students_action"
+      %a= link_to 'редактировать', student_path(s) + "/edit", class: "students_action"
+      %a= link_to 'предметы', subjects_student_path(s), class: "students_action"
+
+
+
+
+

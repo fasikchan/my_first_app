@@ -1,0 +1,13 @@
+.top
+  %span
+    Редактирование студента
+  %a(href='/students') &larr; Список студентов
+
+.content
+  = form_for @student do |f|
+    %p= f.text_field :name, class: "inputs", placeholder: "Имя"
+    %p= f.text_field :family, class: "inputs", placeholder: "Фамилия"
+    %p= f.text_field :age, class: "inputs", placeholder: "Возраст"
+    %p.select= f.select :in_group, options_for_select(@valid_groups)
+    %p= f.submit "Отправить", class: "button"
+

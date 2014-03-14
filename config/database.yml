@@ -1,0 +1,18 @@
+database_common: &database_common
+  adapter: postgresql
+  encoding: utf8
+  reconnect: true
+  prepared_statements: false
+  host: localhost
+
+panel_user_development: &panel_user_development
+  username: fasikkun
+  password: pnd4fe69
+
+#my_first_app
+
+development:
+  database: my_first_app
+  <<: *database_common
+  <<: *panel_user_development
+

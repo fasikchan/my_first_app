@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+
+.top {
+  padding-top: 5px;
+  height: 25px;
+  width: auto;
+  background-color: black;
+}
+
+.top span {
+  color: white;
+  padding-left: 5px;
+}
+
+.top a {
+  color: white;
+  float: right;
+  padding-right: 20px;
+  font-size: 9px;
+  margin-top: 4px;
+}
+
+.top a:hover {
+  color: gray;
+}
+
+.content {
+  width: 350px;
+  height: auto;
+  margin-left: auto;
+  margin-right:auto;
+  margin-top: 30px;
+  border: 2px dotted black;
+  border-radius: 7px;
+  min-height: 100px;
+}
+
+.content .students {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.content .students_name {
+  color: black;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.content .students_name:hover {
+  color: gray;
+}
+
+.content .students_action {
+  color: black;
+  font-size: 7px;
+  float: right;
+  padding-top: 5px;
+  padding-right: 10px;
+}
+
+.content .students_action:hover {
+  color:gray;
+}
+
+.content .info {
+  float: left;
+  width: 200px;
+}
+
+.content .subjects {
+  margin-left: 220px;
+  padding-top: 5px;
+}
+
+.content .show_name {
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.content .show_info {
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.content .show_subjects {
+  font-size: 10px;
+}
+
+.content .inputs {
+  margin-left: 34px;
+  text-align: center;
+  border: 2px dotted black;
+  border-radius: 5px;
+}
+
+.content .button {
+  margin-left: 130px;
+  border: 2px dotted black;
+  border-radius: 5px;
+}
+
+.content .select {
+  margin-left: 34px;
+  width: 50px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}

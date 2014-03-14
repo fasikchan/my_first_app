@@ -1,0 +1,10 @@
+!!! 5
+%html
+  %head
+    %title Students
+    = stylesheet_link_tag    "my_first_app", :media => "all"
+    = javascript_include_tag "application.js"
+    = javascript_include_tag "my_first_app.js"
+    = csrf_meta_tags
+  %body
+    = yield

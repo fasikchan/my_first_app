@@ -1,0 +1,15 @@
+.top
+  %span
+    Предметы
+  %a(href='/students') &larr; Список студентов
+
+.content
+  = form_tag subjects_student_path(@student), method: "post" do
+    - @subjects.each do |s|
+      %label
+        = s.name
+        %input{ type: "checkbox", name: "subjects[]", value: s.id, checked: @student_subjects.include?(s.id) && true }
+      = select_tag "marks[#{s.id}]", options_for_select(@marks, @student_subjects_marks[s.id])
+      %br
+
+    = submit_tag "Подтвердить"

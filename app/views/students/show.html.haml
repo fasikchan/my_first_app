@@ -1,0 +1,18 @@
+.top
+  %span
+    Подробнее
+  %a(href='/students') &larr; Список студентов
+
+.content
+  .info
+    %p.show_name
+      = "#{@student.name} #{@student.family}"
+    %p.show_info
+      = "Возраст: #{@student.age}"
+    %p.show_info
+      = "Группа: #{@student.in_group}"
+  .subjects
+    -@result.each do |i|
+      %p.show_subjects
+        = i
+
